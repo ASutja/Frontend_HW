@@ -29,7 +29,7 @@ async function fetchWeatherData(cityId) {
 
 function displayWeather(data) {
     document.getElementById('cityName').textContent = data.name;
-    document.getElementById('temperature').textContent = `Температура: ${data.main.temp} °C`;
+    document.getElementById('temperature').textContent = `Temperature: ${data.main.temp} °C`;
     document.getElementById('weatherDescription').textContent = data.weather[0].description;
 }
 
