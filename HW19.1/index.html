@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Widget</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        #weather {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+        }
+        #weather h2 {
+            margin: 0 0 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weather Widget</h1>
+    <select id="citySelect">
+        <option value="1816670">Beijing</option>
+        <option value="5128581">New York</option>
+        <option value="2643743">London</option>
+        <option value="2950159">Berlin</option>
+        <option value="1850147">Tokyo</option>
+    </select>
+    <button id="updateButton">Update Weather</button>
+    <div id="weather">
+        <h2 id="cityName"></h2>
+        <p id="temperature"></p>
+        <p id="weatherDescription"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
