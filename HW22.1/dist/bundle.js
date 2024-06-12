@@ -1,0 +1,1 @@
+(()=>{"use strict";$("#addTaskBtn").click((function(){var t=$("#newTask").val();if(t){var a=$('<li class="list-group-item"></li>').text(t);a.click((function(){$("#taskModalBody").text($(this).text()),$("#taskModal").modal("show")})),$("#taskList").append(a),$("#newTask").val("")}}))})();
