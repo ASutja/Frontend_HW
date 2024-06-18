@@ -1,0 +1,18 @@
+{
+  "name": "todo-api",
+  "version": "1.0.0",
+  "description": "ToDo list API using Node.js, Express, and MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongodb": "^4.17.2",
+    "mongoose": "^8.4.3"
+  },
+  "author": "sutya",
+  "license": "ISC"
+}
