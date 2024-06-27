@@ -25,7 +25,7 @@ const EmojiVote = () => {
     setEmojis(newEmojis);
   };
 
-  const showResults = () => {
+  const handleShowResults = () => {
     const maxVotes = Math.max(...emojis.map(emoji => emoji.votes));
 
     if (maxVotes === 0) {
@@ -43,7 +43,7 @@ const EmojiVote = () => {
     }
   };
 
-  const clearResults = () => {
+  const handleClearResults = () => {
     const resetEmojis = emojis.map(emoji => ({ ...emoji, votes: 0 }));
     setEmojis(resetEmojis);
     localStorage.removeItem('emojiVotes');
@@ -59,8 +59,8 @@ const EmojiVote = () => {
           </button>
         ))}
       </div>
-      <button onClick={showResults}>Show Results</button>
-      <button onClick={clearResults}>Clear Results</button>
+      <button onClick={handleShowResults}>Show Results</button>
+      <button onClick={handleClearResults}>Clear Results</button>
     </div>
   );
 };
