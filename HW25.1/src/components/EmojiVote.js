@@ -5,7 +5,7 @@ class EmojiVote extends Component {
     super(props);
     this.state = {
       emojis: [
-        { emoji: '😊', votes: 0 },
+        { emoji: '😊', votes: 40000000 },
         { emoji: '😂', votes: 0 },
         { emoji: '😢', votes: 0 },
         { emoji: '😡', votes: 0 }
