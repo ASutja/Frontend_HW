@@ -1,0 +1,17 @@
+{
+    "hotels": [
+      {
+        "id": 1,
+        "name": "Hotel A",
+        "location": "City A",
+        "price": 100
+      },
+      {
+        "id": 2,
+        "name": "Hotel B",
+        "location": "City B",
+        "price": 150
+      }
+    ]
+  }
+  
