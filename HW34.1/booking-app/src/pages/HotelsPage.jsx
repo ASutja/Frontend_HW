@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import HotelCard from './HotelCard';
+import HotelCard from '../components/HotelCard/HotelCard';
 import { selectHotels } from '../store/hotels/hotels.slice';
 import './HotelsPage.css';
 
@@ -9,6 +9,7 @@ const HotelsPage = () => {
 
   return (
     <div className="hotels-page">
+      <br />
       <h1>Hotels</h1>
       <div className="hotel-list">
         {hotels.map((hotel) => (

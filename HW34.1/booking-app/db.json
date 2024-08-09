@@ -1,17 +1,12 @@
 {
-    "hotels": [
-      {
-        "id": 1,
-        "name": "Hotel A",
-        "location": "City A",
-        "price": 100
-      },
-      {
-        "id": 2,
-        "name": "Hotel B",
-        "location": "City B",
-        "price": 150
-      }
-    ]
-  }
-  
+  "destinations": [
+    { "id": 1, "name": "New York" },
+    { "id": 2, "name": "Los Angeles" },
+    { "id": 3, "name": "Chicago" }
+  ],
+  "hotels": [
+    { "id": 1, "name": "Woogo Central Park - Tempo Apartments", "address": "240 West 73rd Street", "city": "New York", "state": "NY", "country": "USA", "imageUrl": "https://via.placeholder.com/140" },
+    { "id": 2, "name": "Amolite Hotel", "address": "Avenida Curitiba, 811", "city": "New York", "state": "NY", "country": "USA", "imageUrl": "https://via.placeholder.com/140" },
+    { "id": 3, "name": "Redford Hotel", "address": "136 Ludlow Street", "city": "New York", "state": "NY", "country": "USA", "imageUrl": "https://via.placeholder.com/140" }
+  ]
+}

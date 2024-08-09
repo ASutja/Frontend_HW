@@ -1,0 +1,25 @@
+.home-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.search-form input, .search-form button {
+  padding: 10px;
+  font-size: 1em;
+}
+
+h1{
+  text-align: center;
+}
+p{
+  text-align: center;
+}
+
+

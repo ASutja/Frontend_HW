@@ -1,18 +1,24 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const initialState = [];
+export const fetchDestinations = createAsyncThunk(
+  'destinations/fetchDestinations',
+  async () => {
+    const response = await fetch('http://localhost:3001/destinations');
+    return response.json();
+  }
+);
 
 const destinationsSlice = createSlice({
   name: 'destinations',
-  initialState,
-  reducers: {
-    setDestinations: (state, action) => {
-      console.log("Setting destinations:", action.payload); 
+  initialState: [],
+  reducers: {},
+  extraReducers: (builder) => {
+    builder.addCase(fetchDestinations.fulfilled, (state, action) => {
       return action.payload;
-    },
+    });
   },
 });
 
-export const { setDestinations } = destinationsSlice.actions;
 export const selectDestinations = (state) => state.destinations;
 export default destinationsSlice.reducer;
+
